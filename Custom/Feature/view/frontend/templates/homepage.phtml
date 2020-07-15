@@ -1,0 +1,17 @@
+<?php
+/**
+ * Homepage cms view template
+ *
+ * @var $block HomePage
+ */
+
+use Custom\Feature\Block\HomePage;
+
+?>
+<?php if ($block->showBlockData()): ?>
+    <div class="custom-cms-content"> 
+        <p><?php echo $block->getCustomText();?></p>
+        <?php echo $block->fetchCmsBlockData(); ?>
+    </div>
+<?php endif; ?>
+
